@@ -5,7 +5,7 @@ services:
         build:
             context: .
             dockerfile: dockerfile-daemon
-            args
+            args:
                 TZ: ${TZ-Asia/Shanghai}
         network_mode: "host"
         restart: always
